@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="proyecto.ejemplo.holamundo.reke.proyecto_1.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="342dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/canchabasquetbol"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tittletext"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/local"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:background="@android:color/black"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/contadorLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/guion"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:text="@string/visitante"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:background="@android:color/black"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/contadorVisitante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="36sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <Button
+            android:id="@+id/bincrementa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="increCont"
+            android:padding="0dp"
+            android:text="@string/_1"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bl2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="increCont"
+            android:padding="0dp"
+            android:text="@string/_2"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="10"
+            android:layout_row="0"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/bv3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="10"
+            android:layout_row="1"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/bv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="9"
+            android:layout_row="0"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/bl3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:onClick="increCont"
+            android:text="@string/_3" />
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <Button
+            android:id="@+id/bresetea"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="resCont"
+            android:text="@string/resetear" />
+
+        <Button
+            android:id="@+id/bdeshacer"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="decreCont"
+            android:text="@string/Deshacer" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
